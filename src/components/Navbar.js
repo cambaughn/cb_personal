@@ -6,8 +6,7 @@ import font from '../util/fonts';
 
 const Navbar = () => {
 
-return (
-  <Router>
+  return (
     <div style={styles.nav} >
       <Link to={'/'} style={styles.brand}>
         <h1> CAMERON BAUGHN </h1>
@@ -27,9 +26,7 @@ return (
         </Link>
       </div>
     </div>
-  </Router>
-)
-
+  )
 }
 
 const styles = {

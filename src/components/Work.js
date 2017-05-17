@@ -4,22 +4,20 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import colors from '../util/colors';
 import font from '../util/fonts';
 
-const Home = () => {
+const Work = () => {
 
   return (
     <div style={styles.page}>
       <div style={styles.contentWrapper}>
-        {/*<img src={require('../assets/images/paint1.png')} style={styles.paint} /> */}
-        <h1 style={styles.headline}> HELLO THERE </h1>
+        <h1 style={styles.headline}> MORE COMING SOON </h1>
         <div style={styles.mainContent}>
-          <p> I'm a front end engineer and product manager. </p>
-          <p> Feel free to check out my work or contact me. </p>
+          <p> In the meantime, please check out my <a href='https://github.com/cambaughn' target='blank' style={styles.a}>GitHub</a>! </p>
         </div>
-        { /* <div style={styles.circle}></div> */ }
       </div>
     </div>
   )
 }
+
 
 const styles = {
   page: {
@@ -31,7 +29,6 @@ const styles = {
     fledDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    // border: '1px solid pink',
 
   },
 
@@ -49,7 +46,7 @@ const styles = {
     fontWeight: font.heavy,
     position: 'relative',
 
-    fontSize: '600%',
+    fontSize: '400%',
 
     marginTop: 0,
     marginBottom: '-10px',
@@ -69,18 +66,11 @@ const styles = {
     position: 'absolute'
   },
 
-  circle: {
-    borderRadius: 1000,
-    backgroundColor: 'lightgreen',
-
-    width: 550,
-    height: 550,
-    position: 'absolute',
-    zIndex: -1,
+  a: {
+    textDecoration: 'none',
+    color: colors.pink,
   }
-
 
 }
 
-
-export default Home;
+export default Work;
