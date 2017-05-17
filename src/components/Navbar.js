@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
+import colors from '../util/colors';
+import font from '../util/fonts';
 
 const Navbar = () => {
 
@@ -70,7 +72,7 @@ const styles = {
     fontWeight: '700',
 
     textDecoration: 'none',
-    color: 'black',
+    color: colors.black,
     cursor: 'pointer',
 
   },
