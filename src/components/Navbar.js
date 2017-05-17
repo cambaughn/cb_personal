@@ -70,8 +70,6 @@ const styles = {
 
     textDecoration: 'none',
     color: colors.black,
-    cursor: 'pointer',
-
   },
 
 }

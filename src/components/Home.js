@@ -13,7 +13,7 @@ const Home = () => {
         <h1 style={styles.headline}> HELLO THERE </h1>
         <div style={styles.mainContent}>
           <p> I'm a front end engineer and product manager. </p>
-          <p> Feel free to check out my work or contact me. </p>
+          <p> Please check out my <Link to={'/work'} style={styles.link}>work</Link> or <Link to={'/contact'} style={styles.link}>contact me</Link>! </p>
         </div>
         { /* <div style={styles.circle}></div> */ }
       </div>
@@ -77,6 +77,11 @@ const styles = {
     height: 550,
     position: 'absolute',
     zIndex: -1,
+  },
+
+  link: {
+    textDecoration: 'none',
+    color: colors.pink,
   }
 
 
