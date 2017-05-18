@@ -9,6 +9,7 @@ const Contact = () => {
   return (
     <div style={styles.page}>
       <div style={styles.contentWrapper}>
+        <h1 style={styles.headline}> SAY HELLO </h1>
         <a href="mailto:cam.baughn@gmail.com?Subject=Hi" target="blank" style={styles.a}>
           <div style={styles.button}>CONTACT ME</div>
         </a>
@@ -20,7 +21,7 @@ const Contact = () => {
 const styles = {
   page: {
     width: '100%',
-    height: window.innerHeight - 150,
+    height: window.innerHeight - 180,
     minWidth: 500,
 
     display: 'flex',
@@ -43,6 +44,18 @@ const styles = {
     padding: 25,
     paddingTop: 10,
     paddingBottom: 10,
+  },
+
+  headline: {
+    color: colors.black,
+    fontFamily: font.main,
+    fontWeight: font.heavy,
+    position: 'relative',
+
+    fontSize: '500%',
+
+    marginTop: 0,
+    marginBottom: '10px',
   },
 
 
