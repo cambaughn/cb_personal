@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
-import colors from '../util/colors';
-import font from '../util/fonts';
+import colors from '../../util/design/colors';
+import font from '../../util/design/fonts';
 
-const Work = () => {
+const Home = () => {
 
   return (
     <div style={styles.page}>
       <div style={styles.contentWrapper}>
-        <h1 style={styles.headline}> MORE COMING SOON </h1>
+        {/*<img src={require('../assets/images/paint1.png')} style={styles.paint} /> */}
+        <h1 style={styles.headline}> HELLO THERE </h1>
         <div style={styles.mainContent}>
-          <p> In the meantime, please check out my <a href='https://github.com/cambaughn' target='blank' style={styles.a}>GitHub</a>! </p>
+          <p> I'm a front end engineer and product manager. </p>
+          <p> Please check out my <Link to={'/work'} style={styles.link}>work</Link> or <Link to={'/contact'} style={styles.link}>contact me</Link>! </p>
         </div>
+        { /* <div style={styles.circle}></div> */ }
       </div>
     </div>
   )
 }
-
 
 const styles = {
   page: {
@@ -29,6 +31,7 @@ const styles = {
     fledDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    // border: '1px solid pink',
 
   },
 
@@ -46,7 +49,7 @@ const styles = {
     fontWeight: font.heavy,
     position: 'relative',
 
-    fontSize: '400%',
+    fontSize: '600%',
 
     marginTop: 0,
     marginBottom: '-10px',
@@ -66,11 +69,23 @@ const styles = {
     position: 'absolute'
   },
 
-  a: {
+  circle: {
+    borderRadius: 1000,
+    backgroundColor: 'lightgreen',
+
+    width: 550,
+    height: 550,
+    position: 'absolute',
+    zIndex: -1,
+  },
+
+  link: {
     textDecoration: 'none',
     color: colors.pink,
   }
 
+
 }
 
-export default Work;
+
+export default Home;

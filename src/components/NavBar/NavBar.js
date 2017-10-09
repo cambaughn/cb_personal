@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import colors from '../util/colors';
-import font from '../util/fonts';
+import colors from '../../util/design/colors';
+import font from '../../util/design/fonts';
 
-const Navbar = () => {
+const NavBar = () => {
 
   return (
     <div style={styles.nav} >
@@ -74,4 +74,4 @@ const styles = {
 
 }
 
-export default Navbar;
+export default NavBar;
