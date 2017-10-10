@@ -47,7 +47,7 @@ const styles = {
   },
 
   headline: {
-    color: colors.black,
+    color: 'black',
     fontFamily: font.main,
     fontWeight: font.heavy,
     position: 'relative',

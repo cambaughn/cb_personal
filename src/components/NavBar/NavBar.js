@@ -7,25 +7,24 @@ import font from '../../util/design/fonts';
 const NavBar = () => {
 
   return (
-    <div style={styles.nav} >
-      <Link to={'/'} style={styles.brand}>
-        <h1> CAMERON BAUGHN </h1>
-      </Link>
+    <nav className="navbar navbar-toggleable-md bg-inverse">
 
-      <div style={styles.linkWrapper}>
-        <Link to={'/'} style={styles.link}>
-          home
-        </Link>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-        <Link to={'/work'} style={styles.link}>
-          work
-        </Link>
+      <a className="navbar-brand" href="/">Cameron Baughn</a>
 
-        <Link to={'/contact'} style={styles.link}>
-          contact
-        </Link>
+      <div className="collapse navbar-collapse" id="navbarNav">
+
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/">Home</a>
+          </li>
+
+        </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 
@@ -50,7 +49,7 @@ const styles = {
     fontFamily: 'Oswald',
     fontWeight: '700',
 
-    color: '#E32F86',
+    color: 'black',
 
     textDecoration: 'none',
   },
@@ -69,7 +68,7 @@ const styles = {
     fontWeight: '700',
 
     textDecoration: 'none',
-    color: colors.black,
+    color: 'black',
   },
 
 }

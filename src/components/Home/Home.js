@@ -5,20 +5,18 @@ import colors from '../../util/design/colors';
 import font from '../../util/design/fonts';
 
 const Home = () => {
-
-  return (
-    <div style={styles.page}>
-      <div style={styles.contentWrapper}>
-        {/*<img src={require('../assets/images/paint1.png')} style={styles.paint} /> */}
-        <h1 style={styles.headline}> HELLO THERE </h1>
-        <div style={styles.mainContent}>
-          <p> I'm a front end engineer and product manager. </p>
-          <p> Please check out my <Link to={'/work'} style={styles.link}>work</Link> or <Link to={'/contact'} style={styles.link}>contact me</Link>! </p>
-        </div>
-        { /* <div style={styles.circle}></div> */ }
-      </div>
-    </div>
-  )
+  return <div></div>
+  // return (
+  //   <div style={styles.page}>
+  //     <div style={styles.contentWrapper}>
+  //       <h1 style={styles.headline}> HELLO THERE </h1>
+  //       <div style={styles.mainContent}>
+  //         <p> I'm a front end engineer and product manager. </p>
+  //         <p> Please check out my <Link to={'/work'} style={styles.link}>work</Link> or <Link to={'/contact'} style={styles.link}>contact me</Link>! </p>
+  //       </div>
+  //     </div>
+  //   </div>
+  // )
 }
 
 const styles = {
@@ -44,7 +42,7 @@ const styles = {
   },
 
   headline: {
-    color: colors.black,
+    color: 'black',
     fontFamily: font.main,
     fontWeight: font.heavy,
     position: 'relative',
@@ -57,7 +55,7 @@ const styles = {
 
   mainContent: {
     position: 'relative',
-    color: colors.black,
+    color: 'black',
     fontSize: '125%',
 
     textAlign: 'center',

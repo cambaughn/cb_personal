@@ -3,7 +3,6 @@
 
 const colors = {
   pink: '#E32F86',
-  black: '#333333',
 }
 
 
